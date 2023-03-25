@@ -8,6 +8,9 @@ fun main() {
     println(goodBayText)
 
     var countOfStaff: Int = 2000
+//    println(countOfStaff)
+
+    countOfStaff--
     println(countOfStaff)
 
 }
