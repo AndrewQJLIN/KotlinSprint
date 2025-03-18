@@ -1,24 +1,19 @@
 fun main() {
     val trainingDay = 5
 
-    val dayEvenOdd = trainingDay % 2 == 0
-
-    val hands = !dayEvenOdd
-    val legs = dayEvenOdd
-    val back = dayEvenOdd
-    val press = !dayEvenOdd
+    val isEven = trainingDay % 2 == 0
 
     print(
         String.format(
             "%-22s %b%n%-22s %b%n%-22s %b%n%-22s %b%n",
             "Упражнения для рук:",
-            hands,
+            !isEven,
             "Упражнения для ног:",
-            legs,
+            isEven,
             "Упражнения для спины:",
-            back,
+            isEven,
             "Упражнения для пресса:",
-            press
+            !isEven
         )
     )
 
